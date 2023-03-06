@@ -31,7 +31,8 @@ def check_upsample_scaling():
 def check_rotate_shift():
     square_matrix = [[0,0,0],[0,0,0],[1,0,1]]
     rotate_matrix = rotate(square_matrix)
-    final_matrix = right_shift(rotate_matrix,1)
+    rs_matrix = right_shift(rotate_matrix,1)
+    final_matrix = reflect(rs_matrix)
     assert(final_matrix == [[0, 1, 0], [0, 0, 0], [0, 1, 0]])
 
 #is_matrix_square()
