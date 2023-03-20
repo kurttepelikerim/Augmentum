@@ -37,8 +37,13 @@ develop = [
     "mypy",
     "pytest>=4.3.0",
     "pytest-cov>=2.6.1",
+    "pytest-mock>=3.10.0",
     "twine",
     "wheel",
+    "numpy",
+    "sphinx",
+    "IPython",
+    "config"
 ]
 
 [tool.black]
@@ -55,7 +60,7 @@ ignore = [
 ignore = ['E203', 'W503']
 max-line-length=120
 exclude=[
-    'source/tests/testing.py'
+    'source/tests/*'
 ]
 per-file-ignores= [
 ]
@@ -86,4 +91,8 @@ python_version = '3.10'
 # disallow_untyped_calls = true
 
 [tool.pytest.ini_options]
+asyncio_mode = 'strict'
 testpaths = 'source/tests'
+
+[tool.setuptools]
+py-modules = []
