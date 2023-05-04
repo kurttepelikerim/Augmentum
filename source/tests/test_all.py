@@ -7,10 +7,9 @@ import numpy as np
 # from .. import augment
 # from unittest.mock import patch
 
-# UNIT TESTS
-
 
 class TestMethods(unittest.TestCase):
+    # UNIT TESTS
     def test_is_matrix_square(self):
         non_square_matrix = [[1, 1, 1], [1, 1, 1]]
         assert augment.augment_image(non_square_matrix) == None
@@ -42,11 +41,3 @@ class TestMethods(unittest.TestCase):
         rs_matrix = augment.right_shift(rotate_matrix, 1)
         final_matrix = augment.reflect(rs_matrix)
         assert final_matrix == [[0, 1, 0], [0, 0, 0], [0, 1, 0]]
-
-
-# is_matrix_square()
-# check_rotate()
-# check_reflect()
-# check_right_shift()
-# check_upsample_scaling()
-# check_rotate_shift()
