@@ -10,7 +10,7 @@ import numpy as np
 
 class TestMethods(unittest.TestCase):
     # UNIT TESTS
-    augmentum = augment.Augmentum
+    augmentum = augment.Augmentum()
 
     def test_is_matrix_square(self):
         non_square_matrix = [[1, 1, 1], [1, 1, 1]]
