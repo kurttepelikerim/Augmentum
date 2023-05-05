@@ -11,7 +11,7 @@ name = "Augmentum"
 authors = [{name = "Kerim Kurttepeli", email = "kk3084@columbia.edu"}]
 description="A library for doing image augmentation"
 readme = "README.md"
-version = "0.0.1"
+version = "0.1.0"
 requires-python = ">=3.7"
 
 dependencies = []
