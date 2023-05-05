@@ -1,6 +1,6 @@
 # from source import *
 # from augment import rotate, reflect, right_shift, upsample_scaling, augment_image
-import augment
+import main
 import unittest
 import numpy as np
 
@@ -10,7 +10,7 @@ import numpy as np
 
 class TestMethods(unittest.TestCase):
     # UNIT TESTS
-    augmentum = augment.Augmentum()
+    augmentum = main.Augmentum()
 
     def test_is_matrix_square(self):
         non_square_matrix = [[1, 1, 1], [1, 1, 1]]

@@ -3,7 +3,7 @@ graft Augmentum
 include LICENSE
 include README.md
 include CONTRIBUTING.md
-recursive-include source *.py
+recursive-include Augmentum *.py
 
 include .bumpversion.cfg
 include pyproject.toml
