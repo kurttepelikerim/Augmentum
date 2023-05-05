@@ -38,7 +38,8 @@ class Augmentum:
         bigger_img = matrix.repeat(2, axis=0).repeat(2, axis=1)
         return bigger_img
 
-    # Given a binary image(list of lists) returns an image dataset (list of images) by appling image augmentation techniques
+    # Given a binary image(list of lists) returns an image dataset (list of images) by appling 
+    # image augmentation techniques
     def augment_image(self, image_matrix):
         if len(image_matrix) != len(image_matrix[0]):
             return None
