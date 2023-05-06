@@ -15,7 +15,7 @@ include .bumpversion.cfg
 include pyproject.toml
 include Makefile
 include temp/TESTING.md
-
+include *.yaml
 
 prune .github
 exclude .gitignore
