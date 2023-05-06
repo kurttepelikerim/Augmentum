@@ -23,7 +23,7 @@ def rotate(matrix):
 
 def reflect(matrix):
     """
-    Given a binar image (list of lists) reflects it by its vertical central axis
+    Given a binary image (list of lists) reflects it by its vertical central axis
 
     :param matrix: matrix representing the grayscale image
     :type kind: list of lists

@@ -22,12 +22,11 @@ $ pip install Augmentum
 ```
 
 ## Quick Start Example:
-Below is a simple use-case for quick start:
-    
+Users can get more images by passing their pre-existing images using image augmentation techniques.
 ```python
-#given a image in the form of a square matrix (list of lists):
-image_matrix = square_matrix = [[1, 1, 1], [1, 0, 0], [1, 0, 0]]
-
-#returns a list of images:
-new_images = Augmentum.augment_image(image_matrix)
+import Augmentum
+#replace image by the actual grayscale image values
+image =  [[1, 1, 1], [1, 0, 0], [1, 0, 0]]
+new_images = Augmentum.augment_image(image)
 ```
+
