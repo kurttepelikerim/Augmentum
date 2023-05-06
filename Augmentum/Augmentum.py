@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def rotate(self, matrix):
+def rotate(matrix):
     """
     Given a binary image (list of lists) rotates it by 90 degrees (clockwise).
 
@@ -21,7 +21,7 @@ def rotate(self, matrix):
     return matrix
 
 
-def reflect(self, matrix):
+def reflect(matrix):
     """
     Given a binar image (list of lists) reflects it by its vertical central axis
 
@@ -37,7 +37,7 @@ def reflect(self, matrix):
     return matrix
 
 
-def right_shift(self, matrix, x):
+def right_shift(matrix, x):
     """
     Given a binary image (list of lists) shifts it to the right
     by x units (fills left values with 0)
@@ -58,7 +58,7 @@ def right_shift(self, matrix, x):
     return new_matrix
 
 
-def upsample_scaling(self, matrix):
+def upsample_scaling(matrix):
     """
     Given a binary image (list of lists) scales the size of it by a factor of 2 by upsampling
 
@@ -72,7 +72,7 @@ def upsample_scaling(self, matrix):
     return bigger_img
 
 
-def augment_image(self, image_matrix):
+def augment_image(image_matrix):
     """
     Given a binary image (list of lists) returns an image dataset (list of images)
     by appling image augmentation techniques
@@ -85,8 +85,8 @@ def augment_image(self, image_matrix):
     if len(image_matrix) != len(image_matrix[0]):
         return None
     new_images = []
-    new_images.append(self.rotate(image_matrix))
-    new_images.append(self.reflect(image_matrix))
-    new_images.append(self.right_shift(image_matrix, 5))
-    new_images.append(self.upsample_scaling(np.array(image_matrix)))
+    new_images.append(rotate(image_matrix))
+    new_images.append(reflect(image_matrix))
+    new_images.append(right_shift(image_matrix, 5))
+    new_images.append(upsample_scaling(np.array(image_matrix)))
     return new_images
