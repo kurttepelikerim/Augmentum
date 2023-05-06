@@ -108,7 +108,7 @@ docs:
 
 pages: 
 	rm -rf $(TMPREPO)
-	git clone -b gh-pages git@github.com:egeozguroglu/dtw-sofar.git $(TMPREPO)
+	git clone -b gh-pages git@github.com:kurttepelikerim/Augmentum.git $(TMPREPO)
 	rm -rf $(TMPREPO)/*
 	cp -r docs/_build/html/* $(TMPREPO)
 	cd $(TMPREPO);\
