@@ -29,6 +29,10 @@ Users can get more images by passing their pre-existing images using image augme
 import Augmentum
 #replace image by the actual grayscale image values
 image =  [[1, 1, 1], [1, 0, 0], [1, 0, 0]]
+#or instead upload a .raw image file under '.../Augmentum/Augmentum/data/'and
+#call process_image() to get a list of lists representations of your grayscale image however
+#you have to specify the number of ROWS and COLS in your image (default value is 512x512)
+image = Augmentum.process_image(ROWS=512, COLS=512)
 new_images = Augmentum.augment_image(image)
 ```
 
