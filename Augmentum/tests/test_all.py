@@ -1,11 +1,6 @@
-# from source import *
-# from augment import rotate, reflect, right_shift, upsample_scaling, augment_image
 import Augmentum
 import unittest
 import numpy as np
-
-# from .. import augment
-# from unittest.mock import patch
 
 
 class TestMethods(unittest.TestCase):
