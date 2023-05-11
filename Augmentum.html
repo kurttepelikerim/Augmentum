@@ -105,6 +105,26 @@ by appling image augmentation techniques</p>
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="Augmentum.Augmentum.process_image">
+<span class="sig-prename descclassname"><span class="pre">Augmentum.Augmentum.</span></span><span class="sig-name descname"><span class="pre">process_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ROWS</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">COLS</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Augmentum.Augmentum.process_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the .raw file in ./data folder to list of lists</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ROWS</strong> – number of rows in grayscale image (fixed)</p></li>
+<li><p><strong>COLS</strong> – number of columns in grayscale image (fixed)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>matrix representing the grayscale image</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list of lists</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="Augmentum.Augmentum.reflect">
 <span class="sig-prename descclassname"><span class="pre">Augmentum.Augmentum.</span></span><span class="sig-name descname"><span class="pre">reflect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">matrix</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Augmentum.Augmentum.reflect" title="Permalink to this definition">¶</a></dt>
 <dd><p>Given a binary image (list of lists) reflects it by its vertical central axis</p>

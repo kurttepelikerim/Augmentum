@@ -84,10 +84,14 @@
 <h1>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h1>
 <div class="section" id="quick-start-example">
 <h2>Quick Start Example:<a class="headerlink" href="#quick-start-example" title="Permalink to this heading">¶</a></h2>
-<br><p>Users can get more images by passing their pre-existing images using image augmentation techniques.</p>
+<br><p>Users can get more images by passing their pre-existing grayscale images using image augmentation techniques.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Augmentum</span>
 <span class="c1">#replace image by the actual grayscale image values</span>
 <span class="n">image</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#or instead upload a .raw image file under &#39;.../Augmentum/Augmentum/data/&#39;and</span>
+<span class="c1">#call process_image() to get a list of lists representations of your grayscale image however</span>
+<span class="c1">#you have to specify the number of ROWS and COLS in your image (default value is 512x512)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">process_image</span><span class="p">(</span><span class="n">ROWS</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">COLS</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
 <span class="n">new_images</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">augment_image</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -98,6 +102,10 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Augmentum</span>
 <span class="c1">#replace image by the actual grayscale image values</span>
 <span class="n">image</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#or instead upload a .raw image file under &#39;.../Augmentum/Augmentum/data/&#39;and</span>
+<span class="c1">#call process_image() to get a list of lists representations of your grayscale image however</span>
+<span class="c1">#you have to specify the number of ROWS and COLS in your image (default value is 512x512)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">process_image</span><span class="p">(</span><span class="n">ROWS</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">COLS</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
 <span class="n">new_image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">rotate</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -108,6 +116,10 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Augmentum</span>
 <span class="c1">#replace image by the actual grayscale image values</span>
 <span class="n">image</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#or instead upload a .raw image file under &#39;.../Augmentum/Augmentum/data/&#39;and</span>
+<span class="c1">#call process_image() to get a list of lists representations of your grayscale image however</span>
+<span class="c1">#you have to specify the number of ROWS and COLS in your image (default value is 512x512)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">process_image</span><span class="p">(</span><span class="n">ROWS</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">COLS</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
 <span class="n">new_image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">reflect</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -120,6 +132,10 @@
 <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
 <span class="c1">#replace image by the actual grayscale image values</span>
 <span class="n">image</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#or instead upload a .raw image file under &#39;.../Augmentum/Augmentum/data/&#39;and</span>
+<span class="c1">#call process_image() to get a list of lists representations of your grayscale image however</span>
+<span class="c1">#you have to specify the number of ROWS and COLS in your image (default value is 512x512)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">process_image</span><span class="p">(</span><span class="n">ROWS</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">COLS</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
 <span class="n">new_image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">right_shift</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -130,6 +146,10 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">Augmentum</span>
 <span class="c1">#replace image by the actual grayscale image values</span>
 <span class="n">image</span> <span class="o">=</span>  <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+<span class="c1">#or instead upload a .raw image file under &#39;.../Augmentum/Augmentum/data/&#39;and</span>
+<span class="c1">#call process_image() to get a list of lists representations of your grayscale image however</span>
+<span class="c1">#you have to specify the number of ROWS and COLS in your image (default value is 512x512)</span>
+<span class="n">image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">process_image</span><span class="p">(</span><span class="n">ROWS</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> <span class="n">COLS</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
 <span class="n">new_image</span> <span class="o">=</span> <span class="n">Augmentum</span><span class="o">.</span><span class="n">upsample_scaling</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
 </pre></div>
 </div>
