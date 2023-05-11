@@ -6,10 +6,10 @@ A library for doing image augmentation
 [![codecov](https://codecov.io/gh/kurttepelikerim/Augmentum/branch/main/graph/badge.svg)](https://codecov.io/gh/kurttepelikerim/Augmentum)
 [![Build Status](https://github.com/kurttepelikerim/Augmentum/workflows/Build%20Status/badge.svg?branch=main)](https://github.com/kurttepelikerim/Augmentum/actions?query=workflow%3A%22Build+Status%22)
 [![PyPI](https://img.shields.io/pypi/v/Augmentum)](https://pypi.org/project/Augmentum/)
-[![Docs](https://img.shields.io/badge/Github%20Pages-Available-green)](https://kurttepelikerim.github.io/Augmentum/)
+[![Docs](https://img.shields.io/badge/docs-passing-success)](https://kurttepelikerim.github.io/Augmentum/)
 
 ## Overview:
-Augmentum is a library to apply many image augmentations and allow this via a simple interface. This library relies on other libraries and selects the augmentations and their parameters randomly from the sensible presets.
+Image data augmentation is the process of generating new transformed versions of images from the given image dataset to artificially expand the dataset. Augmentum is a library for doing image data augmentation given some images. The main purpose for this library is to apply many data augmentations and allow this via a simple interface without relying on special libraries like opencv, matplotlib, pillow etc.
 
 ### Development and Contributions:
 For development details and contribution instructions, please refer to the [contribution guidelines](https://github.com/kurttepelikerim/Augmentum/blob/main/CONTRIBUTING.md).
