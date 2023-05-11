@@ -1,4 +1,26 @@
 import numpy as np
+import os
+
+
+def process_image(ROWS=512, COLS=512):
+    """
+    Converts the .raw file in ./data folder to list of lists
+
+    :param ROWS: number of rows in grayscale image (fixed)
+    :type kind: integer
+    :param COLS: number of columns in grayscale image (fixed)
+    :type kind: integer
+    :return: matrix representing the grayscale image
+    :rtype: list of lists
+    """
+    directory = os.path.join(os.path.dirname(__file__), 'data')
+    for filename in os.listdir(directory):
+        if filename.endswith('.raw'):
+            # Opening the input image (RAW)
+            img_file = os.path.join(os.path.dirname(__file__), 'data/' + filename)
+            fin = open(img_file)
+            img = np.fromfile(fin, dtype=np.uint8, count=ROWS * COLS).reshape((ROWS, COLS))
+    return img.tolist()
 
 
 def rotate(matrix):
