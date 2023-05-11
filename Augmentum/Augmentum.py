@@ -6,6 +6,10 @@ def process_image(ROWS=512, COLS=512):
     """
     Converts the .raw file in ./data folder to list of lists
 
+    :param ROWS: number of rows in grayscale image (fixed)
+    :type kind: integer
+    :param COLS: number of columns in grayscale image (fixed)
+    :type kind: integer
     :return: matrix representing the grayscale image
     :rtype: list of lists
     """
